@@ -1,4 +1,4 @@
-# shopify
+# shopify solutions
 
 
 Python answer:
@@ -26,12 +26,16 @@ SQL solutions:
 
 a: 4366
 
+
+
 SELECT orderid,sum(quantity) FROM orderdetails
 
 WHERE orderid in (SELECT orderId FROM orders WHERE shipperid=3)
 
 
 b: Peacock
+
+
 
 
 SELECT od.orderid,sum(quantity) total,o.employeeid from orderdetails od
@@ -47,6 +51,8 @@ order by total desc
 
 
 c:Boston Crab Meat
+
+
 
 
 SELECT productid, sum(quantity) total FROM  orderdetails od
